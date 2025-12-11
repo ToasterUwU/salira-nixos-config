@@ -77,6 +77,7 @@
       obsidian
       tidal-hifi
     ];
+    home = "/home/salira";
   };
 
   # Allow unfree packages
