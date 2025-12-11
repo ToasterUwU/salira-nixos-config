@@ -13,6 +13,7 @@
       modules = [
         ./configuration.nix
         ./hosts/theseus
+        ./common
       ];
     };
 
