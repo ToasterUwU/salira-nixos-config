@@ -32,6 +32,6 @@
     # Taskbar
     waybar
 
-    rofi-wayland
+    rofi
   ];
 }
