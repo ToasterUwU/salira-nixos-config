@@ -7,14 +7,14 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+      # ./hardware-configuration.nix
     ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "theseus"; # Define your hostname.
+  # networking.hostName = "theseus"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Flakes because why not
@@ -81,7 +81,19 @@
     packages = with pkgs; [
       vesktop
       firefox
+      obsidian
     ];
+  };
+
+  # Programs
+  programs = {
+
+    steam = {
+      enable = true;
+      remotePlay.openFirewall = true;
+      dedicatedServer.openFirewall = true;
+    };
+
   };
 
   # Allow unfree packages
