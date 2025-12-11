@@ -67,10 +67,10 @@
         autoNumlock = true;
         wayland.enable = true;
       };
-
-      # Bluetooth manager, if not provided by desktop environment
-      # services.blueman.enable = true;
     };
+
+    # Bluetooth manager, if not provided by desktop environment
+    # blueman.enable = true;
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
